@@ -14,7 +14,7 @@ RUN apt-get update && \
     wget \
     openjdk-8-jre-headless
 
-RUN mkdir /jenkins && mkdir /var/log/jenkins/ && cd /jenkins
+RUN mkdir /var/log/jenkins/
 
 RUN wget http://mirrors.jenkins.io/war-stable/2.19.4/jenkins.war
 
