@@ -9,10 +9,10 @@ ENV LOGFILE /var/log/jenkins/jenkins.log
 
 VOLUME /jenkins
 
-RUN apt-get update && \
-    apt-get install -y \
-    wget \
-    openjdk-8-jre-headless
+RUN ["apt-get", "update", "&&", "apt-get", "install", "-y", "wget", "openjdk-8-jre-headless"]
+    #apt-get install -y \
+    #wget \
+    #openjdk-8-jre-headless
 
 RUN mkdir /var/log/jenkins/
 
