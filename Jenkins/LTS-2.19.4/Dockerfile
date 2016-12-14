@@ -8,7 +8,7 @@ ENV LOGFILE=/var/log/jenkins/jenkins.log
 
 RUN apt-get update && \
     apt-get install -y \
-    wget
+    wget \
     openjdk-8-jre-headless
 
 RUN mkdir /jenkins && mkdir /var/log/jenkins/ && cd /jenkins
